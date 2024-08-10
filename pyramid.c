@@ -1,0 +1,25 @@
+#include<cs50.h>
+#include<stdio.h>
+
+int main(void)
+{
+    int n=get_int("enter value here\n");
+
+    for (int i=1; i<=n; i++)
+    {
+        for (int k=i; k<n; k++)
+        {
+            printf(" ");
+        }
+        for (int j=1; j<=i; j++)
+        {
+          printf("#");
+        }
+        printf("  ");
+        for (int m=1; m<=i; m++)
+        {
+            printf("#");
+        }
+        printf("\n");
+    }
+}
